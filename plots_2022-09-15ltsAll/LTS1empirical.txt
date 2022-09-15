@@ -1,0 +1,205 @@
+
+
+ LTS1 False Alarm Rate
+0.03817599
+
+
+ High d-prime at lag 1 - HR = 0.962562793207954 and d' = 3.55348944582261
+
+
+ Low d-prime at lag 128 - HR = 0.691971383147854 and d' = 2.27370261695917
+
+
+ LTS1 Hit Rate by lag  - All Lags
+Generalized linear mixed model fit by maximum likelihood (Laplace Approximation) ['glmerMod']
+ Family: binomial  ( logit )
+Formula: corr ~ llag + (1 | sub)
+   Data: MM1dataLR
+
+     AIC      BIC   logLik deviance df.resid 
+  4122.2   4142.7  -2058.1   4116.2     6857 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-8.2300  0.1594  0.2440  0.3534  1.5068 
+
+Random effects:
+ Groups Name        Variance Std.Dev.
+ sub    (Intercept) 0.7553   0.8691  
+Number of obs: 6860, groups:  sub, 37
+
+Fixed effects:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  3.50598    0.17164   20.43   <2e-16 ***
+llag        -0.31676    0.01912  -16.57   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+     (Intr)
+llag -0.475
+
+
+ LTS1 Hit Rate by lag  - Exclude lag 1
+Generalized linear mixed model fit by maximum likelihood (Laplace Approximation) ['glmerMod']
+ Family: binomial  ( logit )
+Formula: corr ~ llag + (1 | sub)
+   Data: MM1dataLR
+
+     AIC      BIC   logLik deviance df.resid 
+  3814.8   3834.7  -1904.4   3808.8     5753 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-7.8840  0.1815  0.2677  0.3866  1.3821 
+
+Random effects:
+ Groups Name        Variance Std.Dev.
+ sub    (Intercept) 0.7359   0.8578  
+Number of obs: 5756, groups:  sub, 37
+
+Fixed effects:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  3.45333    0.18003   19.18   <2e-16 ***
+llag        -0.30732    0.02214  -13.88   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+     (Intr)
+llag -0.555
+
+
+ LTS1 Median RT by lag  - All Lags
+Linear mixed-effects model fit by REML
+ Data: rtMd 
+        AIC       BIC   logLik
+  -805.1845 -790.4502 406.5923
+
+Random effects:
+ Formula: ~1 | sub
+        (Intercept)   Residual
+StdDev:  0.06505193 0.05043943
+
+Fixed effects: rt ~ llag 
+                Value   Std.Error  DF  t-value p-value
+(Intercept) 0.5555743 0.011959176 258 46.45590       0
+llag        0.0253475 0.001279513 258 19.81027       0
+ Correlation: 
+     (Intr)
+llag -0.374
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-3.89711890 -0.63858759 -0.06133535  0.49592825  4.42757606 
+
+Number of Observations: 296
+Number of Groups: 37 
+
+
+ LTS1 Median RT by lag  - Exclude lag 1 
+Linear mixed-effects model fit by REML
+ Data: rtMd 
+        AIC       BIC   logLik
+  -704.0184 -689.8221 356.0092
+
+Random effects:
+ Formula: ~1 | sub
+        (Intercept)   Residual
+StdDev:   0.0660191 0.04922983
+
+Fixed effects: rt ~ llag 
+                Value   Std.Error  DF  t-value p-value
+(Intercept) 0.5779247 0.012829070 221 45.04806       0
+llag        0.0208774 0.001529496 221 13.64986       0
+ Correlation: 
+     (Intr)
+llag -0.477
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-3.84637675 -0.55873879 -0.06937091  0.46158585  4.41999195 
+
+Number of Observations: 259
+Number of Groups: 37 
+
+
+ LTS1 1st Decile by lag  - All Lags
+Linear mixed-effects model fit by REML
+ Data: dfQ01 
+        AIC       BIC   logLik
+  -994.1335 -979.3992 501.0668
+
+Random effects:
+ Formula: ~1 | sub
+        (Intercept)   Residual
+StdDev:  0.03992641 0.03735687
+
+Fixed effects: qd ~ llag 
+                Value   Std.Error  DF  t-value p-value
+(Intercept) 0.4687455 0.007668101 258 61.12928       0
+llag        0.0211955 0.000947644 258 22.36653       0
+ Correlation: 
+     (Intr)
+llag -0.433
+
+Standardized Within-Group Residuals:
+         Min           Q1          Med           Q3          Max 
+-3.307816077 -0.628461006  0.002380836  0.636722165  4.951213856 
+
+Number of Observations: 296
+Number of Groups: 37 
+
+
+ LTS1 1st Decile RT by lag  - Exclude lag 1 
+Linear mixed-effects model fit by REML
+ Data: dfQ01 
+        AIC      BIC   logLik
+  -902.4103 -888.214 455.2052
+
+Random effects:
+ Formula: ~1 | sub
+        (Intercept)   Residual
+StdDev:  0.04011753 0.03402353
+
+Fixed effects: qd ~ llag 
+                Value   Std.Error  DF  t-value p-value
+(Intercept) 0.4919846 0.008114508 221 60.63024       0
+llag        0.0165477 0.001057059 221 15.65445       0
+ Correlation: 
+     (Intr)
+llag -0.521
+
+Standardized Within-Group Residuals:
+       Min         Q1        Med         Q3        Max 
+-3.1503595 -0.5956834 -0.0659633  0.4950470  5.3487795 
+
+Number of Observations: 259
+Number of Groups: 37 
+
+
+ LTS1 Lag Modulation Factor  - Exclude lag 1 
+Linear mixed-effects model fit by REML
+ Data: dfLMF 
+       AIC      BIC   logLik
+  1722.428 1737.162 -857.214
+
+Random effects:
+ Formula: ~1 | sub
+        (Intercept) Residual
+StdDev:    6.168573 3.632893
+
+Fixed effects: lmf ~ q 
+                Value Std.Error  DF   t-value p-value
+(Intercept) 16.075548  1.115787 258 14.407358   0e+00
+q            6.286898  1.843135 258  3.410981   8e-04
+ Correlation: 
+  (Intr)
+q -0.372
+
+Standardized Within-Group Residuals:
+       Min         Q1        Med         Q3        Max 
+-3.5232967 -0.5043481 -0.0333138  0.4957148  3.5841556 
+
+Number of Observations: 296
+Number of Groups: 37 

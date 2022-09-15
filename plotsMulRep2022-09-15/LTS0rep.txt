@@ -1,0 +1,60 @@
+
+
+ LTS0 Regression of RT for Repetitions on lag1 and lag2
+Linear mixed-effects model fit by REML
+ Data: mulRepMeds 
+       AIC       BIC   logLik
+  -173.559 -153.5273 91.77952
+
+Random effects:
+ Formula: ~1 | sub
+        (Intercept)  Residual
+StdDev:   0.1228505 0.1802683
+
+Fixed effects: RT ~ lag1 + lag2 
+                 Value  Std.Error  DF   t-value p-value
+(Intercept)  0.8712616 0.04127390 393 21.109260  0.0000
+lag1        -0.0037106 0.00448226 393 -0.827849  0.4083
+lag2         0.0208645 0.00480836 393  4.339221  0.0000
+ Correlation: 
+     (Intr) lag1  
+lag1 -0.242       
+lag2 -0.495 -0.067
+
+Standardized Within-Group Residuals:
+       Min         Q1        Med         Q3        Max 
+-2.0249548 -0.5875117 -0.1487435  0.4125292  5.1258372 
+
+Number of Observations: 409
+Number of Groups: 14 
+
+
+ LTS0 Multiple regression with lag and repetition
+Linear mixed-effects model fit by REML
+ Data: rtAll 
+        AIC      BIC   logLik
+  -374.9489 -355.404 193.4745
+
+Random effects:
+ Formula: ~1 | sub
+        (Intercept)   Residual
+StdDev:    0.142934 0.07301834
+
+Fixed effects: rt ~ llag + cond + llag * cond 
+                 Value  Std.Error  DF   t-value p-value
+(Intercept)  0.9336224 0.04160913 179 22.437925  0.0000
+llag         0.0128061 0.00368798 179  3.472392  0.0006
+cond        -0.0690816 0.02332485 179 -2.961718  0.0035
+llag:cond    0.0044005 0.00521560 179  0.843721  0.4000
+ Correlation: 
+          (Intr) llag   cond  
+llag      -0.355              
+cond      -0.280  0.632       
+llag:cond  0.251 -0.707 -0.894
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-2.74188748 -0.48315879 -0.04505079  0.39838289  3.88923267 
+
+Number of Observations: 196
+Number of Groups: 14 

@@ -1,0 +1,93 @@
+
+
+ LTS5 Regression of RT for rep 2 on lag1 and lag2
+ 
+ Intercept 
+ $ 0.573 \pm 0.017 $ 
+$ t(488) = 34.3, p <0.001 $
+
+0 
+ lag1 
+ $ 0.007 \pm 0.002 $ 
+$ t(488) = 4.83, p <0.001 $
+
+0 
+ lag2 
+ $ 0.007 \pm 0.002 $ 
+$ t(488) = 3.56, p <0.001 $
+
+0
+
+
+ LTS5 Regression of RT for rep 2 on lag1 and lag2 (First Reps Excluded)
+ 
+ Intercept 
+ $ 0.569 \pm 0.015 $ 
+$ t(278) = 37.47, p <0.001 $
+
+0 
+ lag1 
+ $ 0 \pm 0.002 $ 
+$ t(278) = -0.31, p = 0.754 $
+
+0.754 
+ lag2 
+ $ 0.011 \pm 0.002 $ 
+$ t(278) = 6.77, p <0.001 $
+
+0
+
+
+ LTS5 Regression of RT for rep 2 on lag1 and lag2
+ 
+ Intercept 
+ $ 0.581 \pm 0.017 $ 
+$ t(592) = 33.92, p <0.001 $
+
+0 
+ lag1 
+ $ -0.003 \pm 0.002 $ 
+$ t(592) = -1.38, p = 0.169 $
+
+0.169 
+ lag2 
+ $ 0.008 \pm 0.002 $ 
+$ t(592) = 4.26, p <0.001 $
+
+0 
+ initial 
+ $ 0.055 \pm 0.006 $ 
+$ t(592) = 9.3, p <0.001 $
+
+0
+
+
+ LTS5 Multiple regression with lag and repetition
+Linear mixed-effects model fit by REML
+ Data: rtAll 
+        AIC       BIC   logLik
+  -1622.257 -1596.722 817.1284
+
+Random effects:
+ Formula: ~1 | sub
+        (Intercept)   Residual
+StdDev:  0.08652468 0.04293037
+
+Fixed effects: rt ~ llag + cond + llag * cond 
+                 Value   Std.Error  DF   t-value p-value
+(Intercept)  0.6861614 0.016164542 487  42.44855  0.0000
+llag         0.0087549 0.002601973 487   3.36471  0.0008
+cond        -0.0390357 0.002810452 487 -13.88948  0.0000
+llag:cond    0.0009373 0.001062251 487   0.88242  0.3780
+ Correlation: 
+          (Intr) llag   cond  
+llag      -0.376              
+cond      -0.348  0.720       
+llag:cond  0.307 -0.816 -0.882
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-2.54440065 -0.69111236 -0.04185774  0.61610089  4.48791286 
+
+Number of Observations: 525
+Number of Groups: 35 

@@ -1,0 +1,50 @@
+
+
+ LTS4 Regression of RT for rep 2 on lag1 and lag2
+ 
+ Intercept 
+ $ 0.641 \pm 0.021 $ 
+$ t(238) = 30.25, p <0.001 $
+
+0 
+ lag1 
+ $ -0.002 \pm 0.003 $ 
+$ t(238) = -0.8, p = 0.426 $
+
+0.426 
+ lag2 
+ $ 0.01 \pm 0.003 $ 
+$ t(238) = 3.36, p <0.01 $
+
+0.001
+
+
+ LTS4 Multiple regression with lag and repetition
+Linear mixed-effects model fit by REML
+ Data: rtAll 
+        AIC       BIC   logLik
+  -621.0418 -602.0189 316.5209
+
+Random effects:
+ Formula: ~1 | sub
+        (Intercept)   Residual
+StdDev:  0.07878949 0.02749543
+
+Fixed effects: rt ~ llag + cond + llag * cond 
+                 Value   Std.Error  DF  t-value p-value
+(Intercept)  0.6714000 0.015643723 147 42.91817   0.000
+llag         0.0073238 0.002323788 147  3.15167   0.002
+cond        -0.0480417 0.008694818 147 -5.52532   0.000
+llag:cond    0.0028036 0.003286332 147  0.85310   0.395
+ Correlation: 
+          (Intr) llag   cond  
+llag      -0.347              
+cond      -0.278  0.624       
+llag:cond  0.245 -0.707 -0.882
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-4.09277133 -0.43112536 -0.02617855  0.39989445  4.80390216 
+
+Number of Observations: 180
+Number of Groups: 30 

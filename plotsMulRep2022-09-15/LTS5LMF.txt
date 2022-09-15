@@ -1,0 +1,41 @@
+
+
+ LTS5 Lag Modulation Factor  - Exclude lag 1 
+Linear mixed-effects model fit by REML
+ Data: dfT 
+       AIC      BIC    logLik
+  1616.321 1630.831 -804.1605
+
+Random effects:
+ Formula: ~1 | sub
+        (Intercept) Residual
+StdDev:    5.971913 3.553568
+
+Fixed effects: lmf ~ q 
+               Value Std.Error  DF  t-value p-value
+(Intercept) 9.872223  1.112663 244 8.872610  0.0000
+q           1.293805  1.853685 244 0.697963  0.4859
+ Correlation: 
+  (Intr)
+q -0.375
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-3.47569862 -0.43183046 -0.08614104  0.46512807  2.96472804 
+
+Number of Observations: 280
+Number of Groups: 35 
+
+
+ LTS5 Lag Modulation Factor  - Exclude lag 1
+ 
+ Intercept 
+ $ 9.872 \pm 1.113 $ 
+$ t(244) = 8.87, p <0.001 $
+
+0 
+ q 
+ $ 1.294 \pm 1.854 $ 
+$ t(244) = 0.7, p = 0.486 $
+
+0.486

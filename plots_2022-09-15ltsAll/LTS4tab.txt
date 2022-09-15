@@ -1,0 +1,72 @@
+
+
+ LTS4 Hit Rate by lag  - Exclude lag 1
+Generalized linear mixed model fit by maximum likelihood (Laplace Approximation) ['glmerMod']
+ Family: binomial  ( logit )
+Formula: corr ~ llag + (1 | sub)
+   Data: MM1dataLR
+
+     AIC      BIC   logLik deviance df.resid 
+  5045.1   5064.5  -2519.6   5039.1     4661 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.6380 -0.8232  0.4211  0.6209  1.7924 
+
+Random effects:
+ Groups Name        Variance Std.Dev.
+ sub    (Intercept) 0.4592   0.6777  
+Number of obs: 4664, groups:  sub, 30
+
+Fixed effects:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  2.17152    0.14883   14.59   <2e-16 ***
+llag        -0.30631    0.01812  -16.90   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+     (Intr)
+llag -0.500
+
+
+ LTS4 Median Rate by lag  - Exclude lag 1
+ 
+ Intercept 
+ $ 0.669 \pm 0.02 $ 
+$ t(179) = 32.85, p <0.001 $
+
+0 
+ Slope 
+ $ 0.024 \pm 0.002 $ 
+$ t(179) = 10.52, p <0.001 $
+
+0
+
+
+ LTS4 1st Decile by lag  - Exclude lag 1
+ 
+ Intercept 
+ $ 0.563 \pm 0.014 $ 
+$ t(179) = 39.26, p <0.001 $
+
+0 
+ Slope 
+ $ 0.022 \pm 0.002 $ 
+$ t(179) = 13.66, p <0.001 $
+
+0
+
+
+ LTS4 Lag Modulation Factor  - Exclude lag 1
+ 
+ Intercept 
+ $ 21.697 \pm 2.706 $ 
+$ t(209) = 8.02, p <0.001 $
+
+0 
+ q 
+ $ 3.233 \pm 2.371 $ 
+$ t(209) = 1.36, p = 0.174 $
+
+0.174
